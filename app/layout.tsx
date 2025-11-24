@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Skanda - Experience Expertise",
   description: "Skanda is a leading IT consulting firm, providing innovative solutions to businesses worldwide.",
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="icon" href={`${process.env.NODE_ENV === 'production' ? '/skandatech' : ''}/favicon.ico`} />
         <script
           dangerouslySetInnerHTML={{
             __html: `
