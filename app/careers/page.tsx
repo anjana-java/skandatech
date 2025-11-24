@@ -7,6 +7,7 @@ import { CareersHero } from "@/components/careers-hero"
 import { JobCard } from "@/components/job-card"
 import { Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/utils"
 
 interface Job {
     id: string
@@ -25,7 +26,7 @@ export default function CareersPage() {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                const response = await fetch("/jobs.json")
+                const response = await fetch(getAssetPath("jobs.json"))
                 if (response.ok) {
                     const data = await response.json()
                     setJobs(data)

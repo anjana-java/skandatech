@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Loader2, Plus, Trash2, Copy, Download } from "lucide-react"
 import { useToast } from "@/components/ui/use-toast"
+import { getAssetPath } from "@/lib/utils"
 
 interface Job {
     id: string
@@ -28,7 +29,7 @@ export default function AdminJobsPage() {
     useEffect(() => {
         const fetchJobs = async () => {
             try {
-                const response = await fetch("/jobs.json")
+                const response = await fetch(getAssetPath("jobs.json"))
                 if (response.ok) {
                     const data = await response.json()
                     setJobs(data)
