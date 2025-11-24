@@ -8,6 +8,7 @@ import { JobCard } from "@/components/job-card"
 import { Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { getAssetPath } from "@/lib/utils"
+import { LinkWrapper } from "@/components/link-wrapper"
 
 interface Job {
     id: string
@@ -83,9 +84,9 @@ export default function CareersPage() {
 
                     <div className="mt-12 text-center">
                         <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white" asChild>
-                            <a href="/contactus">
+                            <LinkWrapper href="/contactus">
                                 Contact Us
-                            </a>
+                            </LinkWrapper>
                         </Button>
                     </div>
                 </div>
