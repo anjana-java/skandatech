@@ -9,8 +9,9 @@ export function RedesignedServicesGrid() {
       title: "Infrastructure Management",
       description:
         "Comprehensive management of your IT infrastructure including servers, networks, and storage systems to ensure optimal performance and reliability.",
-    },
-    
+    }
+  ]
+
 
   return (
     <section className="py-16 bg-white">
@@ -30,7 +31,7 @@ export function RedesignedServicesGrid() {
                   <div className="p-3 bg-orange-100 rounded-full mr-4">
                     <service.icon className="h-6 w-6 text-orange-500" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">{service.title} TestAnjana</h3>
                 </div>
                 <p className="text-gray-600">{service.description}</p>
               </div>
