@@ -1,5 +1,6 @@
 import { Facebook, Linkedin, Twitter, Instagram } from "lucide-react"
 import { LinkWrapper } from "./link-wrapper"
+import { getAssetPath } from "@/lib/utils"
 
 export function Footer() {
   return (
@@ -8,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <img
-              src="/images/skanda_logo.png"
+              src={getAssetPath("images/skanda_logo.png")}
               alt="Skanda - Experience Expertise"
               className="h-10 w-auto mb-4 brightness-[1.5] filter"
             />

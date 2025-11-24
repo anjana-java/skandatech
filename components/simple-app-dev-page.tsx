@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { getAssetPath } from "@/lib/utils"
 
 export function SimpleAppDevPage() {
   return (
@@ -30,7 +31,7 @@ export function SimpleAppDevPage() {
             >
               <div className="w-full max-w-xl mx-auto">
                 <Image
-                  src="/images/bespoke.png"
+                  src={getAssetPath("images/bespoke.png")}
                   alt="Bespoke Application Development Lifecycle"
                   width={600}
                   height={400}

@@ -1,6 +1,7 @@
 "use client"
 import { Menu, ChevronDown } from "lucide-react"
 import { useState } from "react"
+import { getAssetPath } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { LinkWrapper } from "./link-wrapper"
@@ -26,7 +27,7 @@ export function SiteHeader() {
     <header className="fixed top-0 z-50 w-full bg-white shadow-md">
       <div className="container flex h-20 items-center justify-between px-4">
         <LinkWrapper href="/" className="flex items-center">
-          <img src="/images/skanda_logo.png" alt="Skanda - Experience Expertise" className="h-10 md:h-12 w-auto" />
+          <img src={getAssetPath("images/skanda_logo.png")} alt="Skanda - Experience Expertise" className="h-10 md:h-12 w-auto" />
         </LinkWrapper>
 
         <nav className="hidden md:flex items-center h-full">
