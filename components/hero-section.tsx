@@ -18,7 +18,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl text-gray-900"
         >
-          Evaluate Innovate <span className="text-orange-500">Transform</span>
+          Experience <span className="text-orange-500">Expertise</span>
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export function HeroSection() {
         >
           <LinkWrapper href="/welcome">
             <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
-             Welcome
+              Welcome
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </LinkWrapper>

@@ -8,6 +8,7 @@ import { LinkWrapper } from "./link-wrapper"
 const menuItems = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/aboutus" },
+  { name: "Careers", href: "/careers" },
   { name: "Engagement", href: "/engagement" },
 ]
 

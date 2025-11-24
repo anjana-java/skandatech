@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "title": "Senior Full Stack Developer",
+    "department": "Engineering",
+    "location": "Chennai, India",
+    "type": "Full-time",
+    "experience": "5+ years",
+    "description": "We are looking for an experienced Full Stack Developer to join our team. You will be responsible for building and maintaining web applications using Next.js, React, and Node.js."
+  },
+  {
+    "id": "2",
+    "title": "Business Analyst",
+    "department": "Consulting",
+    "location": "Chennai, India",
+    "type": "Full-time",
+    "experience": "3+ years",
+    "description": "Join our consulting team to help clients transform their businesses. You will analyze business processes, identify requirements, and propose solutions."
+  },
+  {
+    "id": "3",
+    "title": "UI/UX Designer",
+    "department": "Design",
+    "location": "Remote",
+    "type": "Contract",
+    "experience": "2+ years",
+    "description": "We need a creative UI/UX Designer to design intuitive and beautiful user interfaces for our web and mobile applications."
+  }
+]
