@@ -3,13 +3,14 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { getAssetPath } from "@/lib/utils"
 
 const gridItems = [
   {
     id: 1,
     title: "Management Consulting",
     description: "Management consulting delivers strategic clarity and execution support across people, processes.",
-    image: "/images/business-meeting.png",
+    image: getAssetPath("images/business-meeting.png"),
     link: "/offerings/management-and-business-consulting/strategic-transformation",
     color: "from-orange-400 to-orange-600",
     secondPage: {
@@ -23,7 +24,7 @@ const gridItems = [
     title: "Business Consulting",
     description:
       "Business consulting delivers tailored solutions to align your operations, marketing, and finance with long-term goals.",
-    image: "/images/business-consulting.png",
+    image: getAssetPath("images/business-consulting.png"),
     link: "/offerings/management-and-business-consulting/strategic-transformation",
     color: "from-orange-400 to-orange-600",
     secondPage: {
@@ -37,7 +38,7 @@ const gridItems = [
     title: "IT Consulting",
     description:
       "Expert IT consulting empowers your business with strategic insights and end-to-end technology planning.",
-    image: "/images/it-consulting.jpeg",
+    image: getAssetPath("images/it-consulting.jpeg"),
     link: "/offerings/management-and-business-consulting/digital-banking",
     color: "from-orange-300 to-orange-100",
     secondPage: {
