@@ -4,9 +4,9 @@ import { motion } from "framer-motion"
 
 export function WelcomeContent() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-6 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -14,7 +14,7 @@ export function WelcomeContent() {
             viewport={{ once: true }}
             className="text-3xl font-bold text-center mb-8 text-gray-900"
           >
-            Our <span className="text-orange-500">Story</span>
+            Welcome to <span className="text-orange-500">skanda</span>
           </motion.h2>
 
           <div className="prose prose-lg max-w-none">

@@ -4,6 +4,7 @@ import { ServicesSection } from "@/components/services-section"
 import { AboutSection } from "@/components/about-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
+import { WelcomeContent } from "@/components/welcome-content"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <SiteHeader />
       <main className="flex-1">
         <HeroSection />
+        <WelcomeContent />
         <ServicesSection />
         <AboutSection />
         <CTASection />

@@ -26,12 +26,6 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-10"
         >
-          <LinkWrapper href="/welcome">
-            <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white">
-              Welcome
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </LinkWrapper>
         </motion.div>
       </div>
     </section>

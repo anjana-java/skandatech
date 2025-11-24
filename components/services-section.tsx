@@ -37,7 +37,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="core-services-section" className="py-24 bg-white">
+    <section id="core-services-section" className="py-4 bg-white">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ export function ServicesSection() {
           viewport={{ once: true }}
           className="text-4xl font-bold text-center mb-16 text-gray-900"
         >
-          Our Core Services
+          Our Core <span className="text-orange-500">Services</span>
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
