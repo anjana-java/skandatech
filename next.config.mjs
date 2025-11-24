@@ -12,6 +12,9 @@ const nextConfig = {
     unoptimized: true,
   },
   output: "export",
+  // GitHub Pages deployment configuration
+  basePath: process.env.NODE_ENV === 'production' ? '/skandatech' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/skandatech' : '',
 }
 
 export default nextConfig
